@@ -5,58 +5,42 @@ import {
   CurrentScreen,
   navigationSlice,
   selectCurrentScreen,
+  selectHeaderHeight,
 } from "src/reducers/navigation";
 import { useSelector } from "react-redux";
 import { RootState } from "src/app/store";
 import { useDispatch } from "react-redux";
 import { setCurrentScreen } from "src/reducers/navigation";
 import { PageNames } from "src/components/Header";
+import { updateCurrentScreen } from "src/helpers/updateCurrentScreen";
 
-export const updateCurrentScreen = (
-  currentScreen: CurrentScreen,
-  dispatch: React.Dispatch<any>,
-  isIntersecting: boolean,
-  intersectionRatio: number | null,
-  screenToCheck: string
-) => {
-  if (
-    isIntersecting &&
-    intersectionRatio &&
-    intersectionRatio > currentScreen.intersectionRatio
-  ) {
-    dispatch(
-      setCurrentScreen({
-        currentScreen: screenToCheck,
-        currentScreenIntersectionRatio: intersectionRatio,
-      })
-    );
-  } else if (
-    currentScreen &&
-    currentScreen.screen &&
-    currentScreen.screen === screenToCheck &&
-    !isIntersecting
-  ) {
-    dispatch(setCurrentScreen(null));
-  }
+type IntroProps = {
+  scrollPosition: number;
 };
 
-const Intro = () => {
+const Intro: React.FC<IntroProps> = ({ scrollPosition }) => {
   const ref = React.useRef(null);
-  const { isIntersecting, intersectionRatio } = useIsOnScreen(ref);
+  const { isIntersecting, intersectionRatio, screenYPosition } = useIsOnScreen(
+    ref,
+    scrollPosition
+  );
 
   const currentScreen = useSelector(selectCurrentScreen);
+  const headerHeight = useSelector(selectHeaderHeight);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    updateCurrentScreen(
+    updateCurrentScreen({
       currentScreen,
       dispatch,
+      headerHeight,
       isIntersecting,
       intersectionRatio,
-      PageNames.IntroPage
-    );
-  }, [currentScreen, dispatch, isIntersecting]);
+      screenYPosition,
+      screenToCheck: PageNames.IntroPage,
+    });
+  }, [currentScreen, dispatch, isIntersecting, scrollPosition]);
 
   return (
     <div id="IntroPage" className="IntroPage Page" ref={ref}>

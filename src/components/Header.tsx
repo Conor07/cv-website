@@ -1,8 +1,12 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "src/app/store";
 import { scrollToElement } from "src/helpers/scrollToElement";
-import { selectCurrentScreen } from "src/reducers/navigation";
+import {
+  selectCurrentScreen,
+  selectHeaderHeight,
+  setHeaderHeight,
+} from "src/reducers/navigation";
 
 export enum PageNames {
   IntroPage = "IntroPage",
@@ -15,14 +19,11 @@ export enum PageNames {
 }
 
 const Header = () => {
-  const headerPageOnClick = (pageName: string) => {
-    scrollToElement(pageName);
-  };
+  const ref = React.useRef<any>(null);
 
-  const currentScreen = useSelector(
-    selectCurrentScreen
-    // (state: RootState) => state.navigation.currentScreen
-  );
+  const dispatch = useDispatch();
+
+  const currentScreen = useSelector(selectCurrentScreen);
 
   const activeScreen = (pageName: string) => {
     return (
@@ -34,8 +35,24 @@ const Header = () => {
     );
   };
 
+  const headerHeight = useSelector(selectHeaderHeight);
+
+  useEffect(() => {
+    if (ref.current) {
+      const height = ref.current.clientHeight ?? 0;
+
+      if (height !== headerHeight) {
+        dispatch(setHeaderHeight(height));
+      }
+    }
+  }, [ref]);
+
+  const headerPageOnClick = (pageName: string) => {
+    scrollToElement(pageName);
+  };
+
   return (
-    <header className="Header">
+    <header className="Header" ref={ref}>
       <h1>Conor Talbot</h1>
 
       <div className="HeaderPages">
