@@ -46,235 +46,37 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
 
       <div className="EmploymentTable">
         <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
+          <div className="Date">Nov 2021 - Dec 2024</div>
 
-          <div className="Date">1/1/2000 - 1/1/2020</div>
+          <div className="Title">
+            Senior Software Engineer and Software Engineer
+          </div>
 
-          <div className="Text">Text 1</div>
+          <div className="Company">AVAMAE Software Solutions Ltd.</div>
+
+          <div className="Text">Frontend Developer</div>
         </div>
+
         <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
+          <div className="Date">Apr 2018 - May 2020</div>
 
-          <div className="Date">1/1/2000 - 1/1/2020</div>
+          <div className="Title">
+            Mid Level Developer and Junior Developer in Machine Learning
+          </div>
 
-          <div className="Text">Text 1</div>
+          <div className="Company">RedBrain Ltd.</div>
+
+          <div className="Text">Machine Learning Developer</div>
         </div>
+
         <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
+          <div className="Date">May 2015 - Aug 2015</div>
 
-          <div className="Date">1/1/2000 - 1/1/2020</div>
+          <div className="Title">Summer Research Intern</div>
 
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
+          <div className="Company">Coventry University</div>
 
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
-        </div>
-        <div className="EmploymentItem">
-          <div className="Title">Employment Item 1</div>
-
-          <div className="Date">1/1/2000 - 1/1/2020</div>
-
-          <div className="Text">Text 1</div>
+          <div className="Text">Research Intern</div>
         </div>
       </div>
     </div>

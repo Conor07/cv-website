@@ -1,13 +1,17 @@
 import "src/styles/main.scss";
 
 import React, { useEffect, useState } from "react";
-import "./App.css";
+import { store } from "./app/store";
+import { Provider } from "react-redux";
 import Intro from "./pages/Intro";
 import Header from "./components/Header";
 import Employment from "./pages/Employment";
-
-import { store } from "./app/store";
-import { Provider } from "react-redux";
+import ComputerSkills from "./pages/ComputerSkills";
+import Education from "./pages/Education";
+import Awards from "./pages/Awards";
+import InterestsAndActivities from "./pages/InterestsAndActivities";
+import References from "./pages/References";
+import Footer from "./components/Footer";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -32,6 +36,18 @@ function App() {
         <Intro scrollPosition={scrollPosition} />
 
         <Employment scrollPosition={scrollPosition} />
+
+        <ComputerSkills scrollPosition={scrollPosition} />
+
+        <Education scrollPosition={scrollPosition} />
+
+        <Awards scrollPosition={scrollPosition} />
+
+        <InterestsAndActivities scrollPosition={scrollPosition} />
+
+        <References scrollPosition={scrollPosition} />
+
+        <Footer />
       </div>
     </Provider>
   );
