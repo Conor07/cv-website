@@ -1,4 +1,5 @@
 import "src/styles/main.scss";
+import "src/styles/pages.scss";
 
 import React, { useEffect, useState } from "react";
 import { store } from "./app/store";
