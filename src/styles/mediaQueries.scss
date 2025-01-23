@@ -85,3 +85,16 @@
     }
   }
 }
+
+// Interests and Activites Page:
+
+@media only screen and (max-width: 480px) {
+  .InterestsAndActivitiesPage {
+    .Interests {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
