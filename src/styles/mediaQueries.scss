@@ -1,0 +1,93 @@
+@media only screen and (max-width: 680px) {
+  .Page {
+    padding: 30px 10px;
+  }
+}
+
+// Header:
+
+@media only screen and (max-width: 1200px) {
+  .Header {
+    .HeaderPages {
+      min-width: 65vw;
+      max-width: 65vw;
+      max-height: 90%;
+      //   display: grid;
+      //   grid-template-columns: repeat(minmax(120px, 1fr), auto);
+      gap: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      //   justify-content: flex-start;
+
+      .HeaderPage {
+        // width: 100%;
+        // flex-grow: 1;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Header {
+    .HeaderPages {
+      min-width: 50vw;
+      max-width: 50vw;
+      overflow-y: scroll;
+      max-height: 90%;
+      //   display: grid;
+      //   grid-template-columns: repeat(minmax(120px, 1fr), auto);
+      gap: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      //   justify-content: flex-start;
+    }
+  }
+}
+
+// Pages:
+
+// ComputerSkillsPage:
+
+@media only screen and (max-width: 768px) {
+  .ComputerSkillsPage {
+    .ComputerSkillsTable {
+      grid-template-columns: 120px auto;
+
+      .SkillsColumn {
+        padding-left: 20px;
+        row-gap: 50px;
+
+        .Row {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          column-gap: 20px;
+          row-gap: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ComputerSkillsPage {
+    .ComputerSkillsTable {
+      grid-template-columns: 90px auto;
+
+      .ArrowColumn {
+        .TopLevel,
+        .BottomLevel {
+          font-size: 13px;
+        }
+
+        .Arrow {
+          width: 25px;
+
+          .ArrowHead {
+            left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
