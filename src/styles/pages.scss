@@ -177,6 +177,16 @@
           display: flex;
           flex-direction: row;
           gap: 5px;
+
+          .Dot {
+            display: flex;
+            align-items: center;
+          }
+
+          .Icon {
+            display: flex;
+            align-items: center;
+          }
         }
       }
     }

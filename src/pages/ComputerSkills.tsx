@@ -7,6 +7,17 @@ import {
   selectCurrentScreen,
   selectHeaderHeight,
 } from "src/reducers/navigation";
+import {
+  DiGithubBadge,
+  DiReact,
+  DiJavascript1,
+  DiSqllite,
+  DiPython,
+  DiCss3,
+  DiHtml5,
+} from "react-icons/di";
+import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
+import { BiLogoTypescript } from "react-icons/bi";
 
 type ComputerSkillsProps = {
   scrollPosition: number;
@@ -63,11 +74,19 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             <div className="SkillItem">
               <div className="Dot">&#x2022;</div>
 
+              <div className="Icon">
+                <DiHtml5 />
+              </div>
+
               <div className="Skill">HTML</div>
             </div>
 
             <div className="SkillItem">
               <div className="Dot">&#x2022;</div>
+
+              <div className="Icon">
+                <DiCss3 />
+              </div>
 
               <div className="Skill">CSS</div>
             </div>
@@ -75,17 +94,28 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             <div className="SkillItem">
               <div className="Dot">&#x2022;</div>
 
+              <div className="Icon">
+                <DiJavascript1 />
+              </div>
+
               <div className="Skill">Javascript</div>
             </div>
 
             <div className="SkillItem">
               <div className="Dot">&#x2022;</div>
 
+              <div className="Icon">
+                <DiReact />
+              </div>
               <div className="Skill">React</div>
             </div>
 
             <div className="SkillItem">
               <div className="Dot">&#x2022;</div>
+
+              <div className="Icon">
+                <DiGithubBadge />
+              </div>
 
               <div className="Skill">Git</div>
             </div>
@@ -96,17 +126,29 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             <div className="SkillItem">
               <div className="Dot">&#x2022;</div>
 
+              <div className="Icon">
+                <BiLogoTypescript />
+              </div>
+
               <div className="Skill">Typescript</div>
             </div>
 
             <div className="SkillItem">
               <div className="Dot">&#x2022;</div>
 
+              <div className="Icon">
+                <DiPython />
+              </div>
+
               <div className="Skill">Python</div>
             </div>
 
             <div className="SkillItem">
               <div className="Dot">&#x2022;</div>
+
+              <div className="Icon">
+                <PiMicrosoftExcelLogoFill />
+              </div>
 
               <div className="Skill">Microsoft Office</div>
             </div>
@@ -117,11 +159,19 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             <div className="SkillItem">
               <div className="Dot">&#x2022;</div>
 
+              <div className="Icon">
+                <DiReact />
+              </div>
+
               <div className="Skill">React Native</div>
             </div>
 
             <div className="SkillItem">
               <div className="Dot">&#x2022;</div>
+
+              <div className="Icon">
+                <DiSqllite />
+              </div>
 
               <div className="Skill">SQL</div>
             </div>

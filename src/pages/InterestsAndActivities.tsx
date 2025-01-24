@@ -7,6 +7,7 @@ import {
   selectCurrentScreen,
   selectHeaderHeight,
 } from "src/reducers/navigation";
+import { PiCameraFill } from "react-icons/pi";
 
 type InterestsAndActivitiesProps = {
   scrollPosition: number;
@@ -97,6 +98,10 @@ const InterestsAndActivities: React.FC<InterestsAndActivitiesProps> = ({
       </div>
 
       <div className="PhotographyPortfolio">
+        <div className="Icon">
+          <PiCameraFill />
+        </div>
+
         <div className="Text">Photography portfolio:</div>
 
         <a href="https://www.conortalbot.com">https://www.conortalbot.com</a>
