@@ -68,7 +68,7 @@ const Education: React.FC<EducationProps> = ({ scrollPosition }) => {
             First Class (Hons), BSc. Applied Mathematics and Theoretical Physics
           </div>
 
-          <div className="University">RedBrain Ltd.</div>
+          <div className="University">Coventry University</div>
 
           <div className="Text">Final Year Project: "Structure in Chaos"</div>
         </div>

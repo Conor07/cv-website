@@ -1,6 +1,10 @@
 import "src/styles/main.scss";
 import "src/styles/pages.scss";
 import "src/styles/mediaQueries.scss";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 import React, { useEffect, useState } from "react";
 import { store } from "./app/store";

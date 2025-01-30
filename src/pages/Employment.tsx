@@ -7,6 +7,8 @@ import {
   selectCurrentScreen,
   selectHeaderHeight,
 } from "src/reducers/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 type EmploymentProps = {
   scrollPosition: number;
@@ -44,6 +46,8 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
     >
       <div className="PageTitle">Employment</div>
 
+      {/* Table Version: */}
+
       <div className="EmploymentTable">
         <div className="EmploymentItem">
           <div className="Date">Nov 2021 - Dec 2024</div>
@@ -79,6 +83,61 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
           <div className="Text">Research Intern</div>
         </div>
       </div>
+
+      {/* Carousel Version: */}
+
+      <Swiper
+        className="EmploymentCarousel"
+        modules={[Navigation, Pagination, A11y]}
+        // modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        // scrollbar={{ draggable: true }}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide>
+          <div className="EmploymentItem">
+            <div className="Date">Nov 2021 - Dec 2024</div>
+
+            <div className="Title">
+              Senior Software Engineer and Software Engineer
+            </div>
+
+            <div className="Company">AVAMAE Software Solutions Ltd.</div>
+
+            <div className="Text">Frontend Developer</div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="EmploymentItem">
+            <div className="Date">Apr 2018 - May 2020</div>
+
+            <div className="Title">
+              Mid Level Developer and Junior Developer in Machine Learning
+            </div>
+
+            <div className="Company">RedBrain Ltd.</div>
+
+            <div className="Text">Machine Learning Developer</div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="EmploymentItem">
+            <div className="Date">May 2015 - Aug 2015</div>
+
+            <div className="Title">Summer Research Intern</div>
+
+            <div className="Company">Coventry University</div>
+
+            <div className="Text">Research Intern</div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };

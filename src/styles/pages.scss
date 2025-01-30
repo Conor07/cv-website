@@ -46,6 +46,41 @@
       }
     }
   }
+
+  .EmploymentCarousel {
+    width: 100%;
+    height: 200px;
+
+    .EmploymentItem {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+
+      .Date {
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 3px;
+        width: fit-content;
+        padding: 5px;
+      }
+
+      .Title {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .Company {
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      .Text {
+        text-align: center;
+      }
+    }
+  }
 }
 
 .ComputerSkillsPage {
@@ -112,7 +147,7 @@
         .ArrowHead {
           position: absolute;
           top: -2px;
-          left: 20px;
+          left: 22px;
           // left: 50%;
           // transform: translateX(-50%);
           display: inline-block;
@@ -154,9 +189,14 @@
       // box-shadow: rgba(38, 128, 0, 0.56) 10px -10px 40px 0px;
 
       .Row {
-        display: grid;
-        grid-template-columns: repeat(5, 100px);
+        // display: grid;
+        // grid-template-columns: repeat(5, 110px);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         column-gap: 10px;
+        max-width: 100%;
+        padding-right: 10px;
 
         &.TopRow {
           align-items: flex-start;
