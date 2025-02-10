@@ -53,6 +53,8 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
       className={`${PageNames.ComputerSkillsPage} Page`}
       ref={ref}
     >
+      <div className="CircleBackground RightCircle LightGrey" />
+
       <div className="PageTitle">Computer Skills</div>
 
       <div className="ComputerSkillsTable">

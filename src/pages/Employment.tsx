@@ -41,13 +41,13 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
   return (
     <div
       id="EmploymentPage"
-      className={`${PageNames.EmploymentPage} Page PageAlternateBackground`}
+      className={`${PageNames.EmploymentPage} Page PageAlternateBackground `}
       ref={ref}
     >
+      <div className="CircleBackground LeftCircle LightGrey" />
+
       <div className="PageTitle">Employment</div>
-
       {/* Table Version: */}
-
       <div className="EmploymentTable">
         <div className="EmploymentItem">
           <div className="Date">Nov 2021 - Dec 2024</div>
@@ -83,9 +83,7 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
           <div className="Text">Research Intern</div>
         </div>
       </div>
-
       {/* Carousel Version: */}
-
       <Swiper
         className="EmploymentCarousel"
         modules={[Navigation, Pagination, A11y]}
