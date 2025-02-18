@@ -6,6 +6,17 @@
     max-width: 80vw;
     border-radius: 8px;
   }
+
+  .GitPortfolio {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+
+    .Icon {
+      padding-top: 1px;
+    }
+  }
 }
 
 .EmploymentPage {

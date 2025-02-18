@@ -13,6 +13,7 @@ import { useDispatch } from "react-redux";
 import { setCurrentScreen } from "src/reducers/navigation";
 import { PageNames } from "src/components/Header";
 import { updateCurrentScreen } from "src/helpers/updateCurrentScreen";
+import { AiFillGithub } from "react-icons/ai";
 
 type IntroProps = {
   scrollPosition: number;
@@ -53,6 +54,16 @@ const Intro: React.FC<IntroProps> = ({ scrollPosition }) => {
         alt="profile pic"
         className="ProfilePicture BoxShadow NoBackground"
       />
+
+      <div className="GitPortfolio">
+        <div className="Icon">
+          <AiFillGithub />
+        </div>
+
+        <div className="Text">Github:</div>
+
+        <a href="https://github.com/Conor07">https://github.com/Conor07</a>
+      </div>
     </div>
   );
 };
