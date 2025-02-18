@@ -57,7 +57,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
 
       <div className="PageTitle">Computer Skills</div>
 
-      <div className="ComputerSkillsTable">
+      <div className="ComputerSkillsTable BoxShadow">
         <div className="ArrowColumn">
           <div className="TopLevel">Intermediate</div>
           <div className="BottomLevel">Basic</div>

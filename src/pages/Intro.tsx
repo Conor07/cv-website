@@ -48,7 +48,11 @@ const Intro: React.FC<IntroProps> = ({ scrollPosition }) => {
 
       <h2>Frontend Developer</h2>
 
-      <img src={profilePicture} alt="profile pic" className="ProfilePicture" />
+      <img
+        src={profilePicture}
+        alt="profile pic"
+        className="ProfilePicture BoxShadow NoBackground"
+      />
     </div>
   );
 };

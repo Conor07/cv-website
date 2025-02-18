@@ -38,9 +38,11 @@ const Awards: React.FC<AwardsProps> = ({ scrollPosition }) => {
 
   return (
     <div id="AwardsPage" className={`${PageNames.AwardsPage} Page`} ref={ref}>
+      <div className="CircleBackground TopCircle LightGrey" />
+
       <div className="PageTitle">Awards</div>
 
-      <div className="AwardsTable">
+      <div className="AwardsTable BoxShadow">
         <div className="AwardsItem">
           <div className="Date">2016</div>
 

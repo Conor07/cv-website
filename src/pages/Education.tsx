@@ -42,9 +42,11 @@ const Education: React.FC<EducationProps> = ({ scrollPosition }) => {
       className={`${PageNames.EducationPage} Page PageAlternateBackground`}
       ref={ref}
     >
+      <div className="CircleBackground BottomCircle LightGrey" />
+
       <div className="PageTitle">Education</div>
 
-      <div className="EducationTable">
+      <div className="EducationTable BoxShadow">
         <div className="EducationItem">
           <div className="Date">Oct 2016 - Mar 2018</div>
 

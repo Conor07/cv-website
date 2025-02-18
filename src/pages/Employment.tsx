@@ -48,7 +48,7 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
 
       <div className="PageTitle">Employment</div>
       {/* Table Version: */}
-      <div className="EmploymentTable">
+      <div className="EmploymentTable BoxShadow">
         <div className="EmploymentItem">
           <div className="Date">Nov 2021 - Dec 2024</div>
 
@@ -93,11 +93,12 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
         navigation
         pagination={{ clickable: true }}
         // scrollbar={{ draggable: true }}
+
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <div className="EmploymentItem">
+          <div className="EmploymentItem BoxShadow">
             <div className="Date">Nov 2021 - Dec 2024</div>
 
             <div className="Title">
@@ -111,7 +112,7 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="EmploymentItem">
+          <div className="EmploymentItem BoxShadow">
             <div className="Date">Apr 2018 - May 2020</div>
 
             <div className="Title">
@@ -125,7 +126,7 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="EmploymentItem">
+          <div className="EmploymentItem BoxShadow">
             <div className="Date">May 2015 - Aug 2015</div>
 
             <div className="Title">Summer Research Intern</div>

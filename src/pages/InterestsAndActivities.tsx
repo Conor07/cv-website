@@ -45,9 +45,11 @@ const InterestsAndActivities: React.FC<InterestsAndActivitiesProps> = ({
       className={`${PageNames.InterestsAndActivitiesPage} Page PageAlternateBackground`}
       ref={ref}
     >
+      <div className="CircleBackground LeftCircle LightGrey" />
+
       <div className="PageTitle">Interests And Activities</div>
 
-      <div className="Interests">
+      <div className="Interests BoxShadow">
         <div className="Interest">
           <div className="Dot">&#x2022;</div>
 
