@@ -38,7 +38,7 @@ const Awards: React.FC<AwardsProps> = ({ scrollPosition }) => {
 
   return (
     <div id="AwardsPage" className={`${PageNames.AwardsPage} Page`} ref={ref}>
-      <div className="CircleBackground TopCircle LightGrey" />
+      {/* <div className="CircleBackground RightCircle LightGrey" /> */}
 
       <div className="PageTitle">Awards</div>
 
@@ -53,6 +53,8 @@ const Awards: React.FC<AwardsProps> = ({ scrollPosition }) => {
           <div className="University">Coventry University</div>
         </div>
       </div>
+
+      <div className="DiagonalSeparator WhiteIntoBlue" />
     </div>
   );
 };

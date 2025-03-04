@@ -41,14 +41,14 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
   return (
     <div
       id="EmploymentPage"
-      className={`${PageNames.EmploymentPage} Page PageAlternateBackground `}
+      className={`${PageNames.EmploymentPage} Page PageBlueBackground `}
       ref={ref}
     >
-      <div className="CircleBackground LeftCircle LightGrey" />
+      {/* <div className="CircleBackground LeftCircle LightGrey" /> */}
 
       <div className="PageTitle">Employment</div>
       {/* Table Version: */}
-      <div className="EmploymentTable BoxShadow">
+      {/* <div className="EmploymentTable BoxShadow">
         <div className="EmploymentItem">
           <div className="Date">Nov 2021 - Dec 2024</div>
 
@@ -82,7 +82,8 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
 
           <div className="Text">Research Intern</div>
         </div>
-      </div>
+      </div> */}
+
       {/* Carousel Version: */}
       <Swiper
         className="EmploymentCarousel"
@@ -137,6 +138,8 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      <div className="DiagonalSeparator BlueIntoWhite" />
     </div>
   );
 };

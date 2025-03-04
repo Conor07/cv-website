@@ -39,10 +39,10 @@ const Education: React.FC<EducationProps> = ({ scrollPosition }) => {
   return (
     <div
       id="EducationPage"
-      className={`${PageNames.EducationPage} Page PageAlternateBackground`}
+      className={`${PageNames.EducationPage} Page PageBlueBackground`}
       ref={ref}
     >
-      <div className="CircleBackground BottomCircle LightGrey" />
+      {/* <div className="CircleBackground LeftCircle LightGrey" /> */}
 
       <div className="PageTitle">Education</div>
 
@@ -75,6 +75,8 @@ const Education: React.FC<EducationProps> = ({ scrollPosition }) => {
           <div className="Text">Final Year Project: "Structure in Chaos"</div>
         </div>
       </div>
+
+      <div className="DiagonalSeparator RightSeparator Grey" />
     </div>
   );
 };

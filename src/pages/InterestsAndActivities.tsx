@@ -42,10 +42,10 @@ const InterestsAndActivities: React.FC<InterestsAndActivitiesProps> = ({
   return (
     <div
       id="InterestsAndActivitiesPage"
-      className={`${PageNames.InterestsAndActivitiesPage} Page PageAlternateBackground`}
+      className={`${PageNames.InterestsAndActivitiesPage} Page PageBlueBackground`}
       ref={ref}
     >
-      <div className="CircleBackground LeftCircle LightGrey" />
+      {/* <div className="CircleBackground LeftCircle LightGrey" /> */}
 
       <div className="PageTitle">Interests And Activities</div>
 
@@ -108,6 +108,8 @@ const InterestsAndActivities: React.FC<InterestsAndActivitiesProps> = ({
 
         <a href="https://www.conortalbot.com">https://www.conortalbot.com</a>
       </div>
+
+      <div className="DiagonalSeparator Grey" />
     </div>
   );
 };

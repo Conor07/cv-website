@@ -53,7 +53,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
       className={`${PageNames.ComputerSkillsPage} Page`}
       ref={ref}
     >
-      <div className="CircleBackground RightCircle LightGrey" />
+      {/* <div className="CircleBackground RightCircle LightGrey" /> */}
 
       <div className="PageTitle">Computer Skills</div>
 
@@ -180,6 +180,8 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
           </div>
         </div>
       </div>
+
+      <div className="DiagonalSeparator RightSeparator WhiteIntoBlue" />
     </div>
   );
 };
