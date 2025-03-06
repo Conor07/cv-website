@@ -1,6 +1,7 @@
 {
   "name": "cv-website",
   "version": "0.1.0",
+  "homepage": "https://conor07.github.io/cv-website",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
@@ -40,9 +41,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
     "@types/react": "^19.0.6",
     "@types/react-dom": "^19.0.3",
-    "typescript": "^5.7.3",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.7.3"
   }
 }
