@@ -14,7 +14,8 @@
       max-height: 90%;
       //   display: grid;
       //   grid-template-columns: repeat(minmax(120px, 1fr), auto);
-      gap: 10px;
+      column-gap: 10px;
+      row-gap: 10px;
       display: flex;
       flex-wrap: wrap;
     }
@@ -30,7 +31,8 @@
       max-height: 90%;
       //   display: grid;
       //   grid-template-columns: repeat(minmax(120px, 1fr), auto);
-      gap: 10px;
+      column-gap: 10px;
+      row-gap: 10px;
       display: flex;
       flex-wrap: wrap;
       //   justify-content: flex-start;
