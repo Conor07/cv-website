@@ -1,2 +1,0 @@
-# cv-website
-CV Website
