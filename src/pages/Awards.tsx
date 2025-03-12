@@ -54,7 +54,7 @@ const Awards: React.FC<AwardsProps> = ({ scrollPosition }) => {
         </div>
       </div>
 
-      <div className="DiagonalSeparator WhiteIntoBlue" />
+      <div className="DiagonalSeparator NormalIntoBlue" />
     </div>
   );
 };

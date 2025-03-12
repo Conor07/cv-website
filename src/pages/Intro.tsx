@@ -65,7 +65,7 @@ const Intro: React.FC<IntroProps> = ({ scrollPosition }) => {
         <a href="https://github.com/Conor07">https://github.com/Conor07</a>
       </div>
 
-      <div className="DiagonalSeparator WhiteIntoBlue" />
+      <div className="DiagonalSeparator NormalIntoBlue" />
     </div>
   );
 };

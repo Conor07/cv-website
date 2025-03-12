@@ -181,7 +181,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
         </div>
       </div>
 
-      <div className="DiagonalSeparator RightSeparator WhiteIntoBlue" />
+      <div className="DiagonalSeparator RightSeparator NormalIntoBlue" />
     </div>
   );
 };

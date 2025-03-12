@@ -139,7 +139,7 @@ const Employment: React.FC<EmploymentProps> = ({ scrollPosition }) => {
         </SwiperSlide>
       </Swiper>
 
-      <div className="DiagonalSeparator BlueIntoWhite" />
+      <div className="DiagonalSeparator BlueIntoNormal" />
     </div>
   );
 };
