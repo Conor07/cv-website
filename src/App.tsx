@@ -7,17 +7,14 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
 import Intro from "./pages/Intro";
 import Header from "./components/Header";
-import Employment from "./pages/Employment";
-import ComputerSkills from "./pages/ComputerSkills";
-import Education from "./pages/Education";
-import Awards from "./pages/Awards";
-import InterestsAndActivities from "./pages/InterestsAndActivities";
-import References from "./pages/References";
+
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,25 +33,18 @@ function App() {
 
   return (
     <Provider store={store}>
-      <div className="App">
-        <Header />
+      <Router>
+        <div className="App">
+          <Header />
 
-        <Intro scrollPosition={scrollPosition} />
-
-        <Employment scrollPosition={scrollPosition} />
-
-        <ComputerSkills scrollPosition={scrollPosition} />
-
-        <Education scrollPosition={scrollPosition} />
-
-        <Awards scrollPosition={scrollPosition} />
-
-        <InterestsAndActivities scrollPosition={scrollPosition} />
-
-        <References scrollPosition={scrollPosition} />
-
-        <Footer />
-      </div>
+          <Routes>
+            <Route path="/">
+              <Home scrollPosition={scrollPosition} />
+            </Route>
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
     </Provider>
   );
 }
