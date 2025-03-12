@@ -28,7 +28,7 @@
   }
 
   &.PageBlueBackground {
-    background-color: #1b34b3;
+    background-color: #0841a8;
 
     .PageTitle {
       color: #fff;
@@ -96,8 +96,8 @@
 
       &.Active {
         .Text {
-          border: 1px solid #1b34b3;
-          // text-decoration: #1b34b3 underline;
+          border: 1px solid #0841a8;
+          // text-decoration: #0841a8 underline;
         }
       }
     }
@@ -192,18 +192,18 @@
 
     &.BlueIntoWhite {
       border-bottom: 100vw solid #fff;
-      border-left: 100vw solid #1b34b3;
+      border-left: 100vw solid #0841a8;
       border-right: none;
     }
 
     &.WhiteIntoBlue {
-      border-bottom: 70px solid #1b34b3;
+      border-bottom: 70px solid #0841a8;
       border-left: 100vw solid #fff;
       border-right: none;
     }
 
     &.GreyIntoBlue {
-      border-bottom: 70px solid #1b34b3;
+      border-bottom: 70px solid #0841a8;
       border-left: 100vw solid #d5d5d5;
       border-right: none;
     }
@@ -211,18 +211,18 @@
 
   &.BlueIntoWhite {
     // border-bottom: 100vw solid #fff;
-    border-right: 100vw solid #1b34b3;
+    border-right: 100vw solid #0841a8;
     border-left: none;
   }
 
   &.WhiteIntoBlue {
-    border-bottom: 70px solid #1b34b3;
+    border-bottom: 70px solid #0841a8;
     border-right: 100vw solid #fff;
     border-left: none;
   }
 
   &.GreyIntoBlue {
-    border-bottom: 70px solid #1b34b3;
+    border-bottom: 70px solid #0841a8;
     border-right: 100vw solid #d5d5d5;
     border-left: none;
   }
