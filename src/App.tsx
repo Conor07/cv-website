@@ -33,10 +33,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route
-          path="/cv-website"
-          element={<Home scrollPosition={scrollPosition} />}
-        />
+        <Route path="/" element={<Home scrollPosition={scrollPosition} />} />
       </Routes>
 
       <Footer />
