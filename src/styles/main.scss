@@ -92,11 +92,17 @@
         color: #fff;
         text-decoration: none;
         padding: 5px;
+        border-radius: 3px;
+
+        &:hover {
+          border: 1px solid #0841a8;
+        }
       }
 
       &.Active {
         .Text {
-          border: 1px solid #0841a8;
+          background-color: #0841a8;
+          // border: 1px solid #0841a8;
           // text-decoration: #0841a8 underline;
         }
       }
