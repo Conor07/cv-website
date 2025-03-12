@@ -37,9 +37,10 @@ function App() {
           <Header />
 
           <Routes>
-            <Route path="/">
-              <Home scrollPosition={scrollPosition} />
-            </Route>
+            <Route
+              path="/"
+              element={<Home scrollPosition={scrollPosition} />}
+            />
           </Routes>
 
           <Footer />
