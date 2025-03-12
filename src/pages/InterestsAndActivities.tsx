@@ -47,7 +47,7 @@ const InterestsAndActivities: React.FC<InterestsAndActivitiesProps> = ({
     >
       {/* <div className="CircleBackground LeftCircle LightGrey" /> */}
 
-      <div className="PageTitle">Interests And Activities</div>
+      <div className="PageTitle">Interests and Activities</div>
 
       <div className="Interests BoxShadow">
         <div className="Interest">

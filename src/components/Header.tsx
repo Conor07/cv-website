@@ -109,7 +109,7 @@ const Header = () => {
             headerPageOnClick(PageNames.InterestsAndActivitiesPage)
           }
         >
-          <div className="Text">Interests &amp; Activities</div>
+          <div className="Text">Interests</div>
         </div>
 
         <div
