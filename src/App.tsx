@@ -10,7 +10,6 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
-import Intro from "./pages/Intro";
 import Header from "./components/Header";
 
 import Footer from "./components/Footer";
@@ -42,6 +41,7 @@ function App() {
               <Home scrollPosition={scrollPosition} />
             </Route>
           </Routes>
+
           <Footer />
         </div>
       </Router>
