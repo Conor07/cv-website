@@ -91,11 +91,13 @@
         font-size: 20px;
         color: #fff;
         text-decoration: none;
+        padding: 5px;
       }
 
       &.Active {
         .Text {
-          text-decoration: #1b34b3 underline;
+          border: 1px solid #1b34b3;
+          // text-decoration: #1b34b3 underline;
         }
       }
     }
