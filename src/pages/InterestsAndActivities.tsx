@@ -7,7 +7,11 @@ import {
   selectCurrentScreen,
   selectHeaderHeight,
 } from "src/reducers/navigation";
-import { PiCameraFill } from "react-icons/pi";
+import { PiCameraFill, PiVideoCameraFill, PiPlanetFill } from "react-icons/pi";
+import { TbSkateboard } from "react-icons/tb";
+import { GiDrumKit } from "react-icons/gi";
+import { FaMouse, FaGuitar } from "react-icons/fa";
+import { RiFilmFill, RiSwordFill } from "react-icons/ri";
 
 type InterestsAndActivitiesProps = {
   scrollPosition: number;
@@ -51,51 +55,93 @@ const InterestsAndActivities: React.FC<InterestsAndActivitiesProps> = ({
 
       <div className="Interests BoxShadow">
         <div className="Interest">
-          <div className="Dot">&#x2022;</div>
+          <div className="Icon">
+            <RiFilmFill />
+          </div>
+
+          {/* <div className="Dot">&#x2022;</div> */}
 
           <div className="Text">Films</div>
         </div>
 
         <div className="Interest">
-          <div className="Dot">&#x2022;</div>
+          <div className="Icon">
+            <PiCameraFill />
+          </div>
+
+          {/* <div className="Dot">&#x2022;</div> */}
 
           <div className="Text">Photography</div>
         </div>
 
         <div className="Interest">
-          <div className="Dot">&#x2022;</div>
+          <div className="Icon">
+            <PiVideoCameraFill />
+          </div>
+
+          {/* <div className="Dot">&#x2022;</div> */}
 
           <div className="Text">Videography</div>
         </div>
 
         <div className="Interest">
-          <div className="Dot">&#x2022;</div>
+          <div className="Icon">
+            <GiDrumKit strokeWidth={10} />
+          </div>
+
+          {/* <div className="Dot">&#x2022;</div> */}
 
           <div className="Text">Drums</div>
         </div>
 
         <div className="Interest">
-          <div className="Dot">&#x2022;</div>
+          <div className="Icon">
+            <FaGuitar />
+          </div>
+
+          {/* <div className="Dot">&#x2022;</div> */}
 
           <div className="Text">Guitar</div>
         </div>
 
         <div className="Interest">
-          <div className="Dot">&#x2022;</div>
+          <div className="Icon">
+            <FaMouse />
+          </div>
+
+          {/* <div className="Dot">&#x2022;</div> */}
 
           <div className="Text">Gaming</div>
         </div>
 
         <div className="Interest">
-          <div className="Dot">&#x2022;</div>
+          <div className="Icon">
+            <TbSkateboard strokeWidth={2} />
+          </div>
+
+          {/* <div className="Dot">&#x2022;</div> */}
 
           <div className="Text">Skateboarding</div>
         </div>
 
         <div className="Interest">
-          <div className="Dot">&#x2022;</div>
+          <div className="Icon">
+            <PiPlanetFill />
+          </div>
+
+          {/* <div className="Dot">&#x2022;</div> */}
 
           <div className="Text">Space</div>
+        </div>
+
+        <div className="Interest">
+          <div className="Icon">
+            <RiSwordFill />
+          </div>
+
+          {/* <div className="Dot">&#x2022;</div> */}
+
+          <div className="Text">Warhammer</div>
         </div>
       </div>
 

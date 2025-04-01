@@ -7,6 +7,7 @@ import {
   selectCurrentScreen,
   selectHeaderHeight,
 } from "src/reducers/navigation";
+import { FaTrophy } from "react-icons/fa6";
 
 type AwardsProps = {
   scrollPosition: number;
@@ -42,8 +43,12 @@ const Awards: React.FC<AwardsProps> = ({ scrollPosition }) => {
 
       <div className="PageTitle">Awards</div>
 
-      <div className="AwardsTable BoxShadow">
-        <div className="AwardsItem">
+      <div className="BoxShadow">
+        <div className="Info">
+          <div className="Icon">
+            <FaTrophy />
+          </div>
+
           <div className="Date">2016</div>
 
           <div className="Title">
@@ -53,6 +58,18 @@ const Awards: React.FC<AwardsProps> = ({ scrollPosition }) => {
           <div className="University">Coventry University</div>
         </div>
       </div>
+
+      {/* <div className="AwardsTable BoxShadow">
+        <div className="AwardsItem">
+          <div className="Date">2016</div>
+
+          <div className="Title">
+            Institute of Mathematics and Its Applications Graduate Prize Winner
+          </div>
+
+          <div className="University">Coventry University</div>
+        </div>
+      </div> */}
 
       <div className="DiagonalSeparator NormalIntoBlue" />
     </div>

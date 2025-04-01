@@ -74,7 +74,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
 
           <div className="TopRow Row">
             <div className="SkillItem">
-              <div className="Dot">&#x2022;</div>
+              {/* <div className="Dot">&#x2022;</div> */}
 
               <div className="Icon">
                 <DiHtml5 />
@@ -84,7 +84,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             </div>
 
             <div className="SkillItem">
-              <div className="Dot">&#x2022;</div>
+              {/* <div className="Dot">&#x2022;</div> */}
 
               <div className="Icon">
                 <DiCss3 />
@@ -94,7 +94,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             </div>
 
             <div className="SkillItem">
-              <div className="Dot">&#x2022;</div>
+              {/* <div className="Dot">&#x2022;</div> */}
 
               <div className="Icon">
                 <DiJavascript1 />
@@ -104,7 +104,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             </div>
 
             <div className="SkillItem">
-              <div className="Dot">&#x2022;</div>
+              {/* <div className="Dot">&#x2022;</div> */}
 
               <div className="Icon">
                 <DiReact />
@@ -113,7 +113,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             </div>
 
             <div className="SkillItem">
-              <div className="Dot">&#x2022;</div>
+              {/* <div className="Dot">&#x2022;</div> */}
 
               <div className="Icon">
                 <DiGithubBadge />
@@ -126,7 +126,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
           {/* Middle Row: */}
           <div className="MiddleRow Row">
             <div className="SkillItem">
-              <div className="Dot">&#x2022;</div>
+              {/* <div className="Dot">&#x2022;</div> */}
 
               <div className="Icon">
                 <BiLogoTypescript />
@@ -136,7 +136,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             </div>
 
             <div className="SkillItem">
-              <div className="Dot">&#x2022;</div>
+              {/* <div className="Dot">&#x2022;</div> */}
 
               <div className="Icon">
                 <DiPython />
@@ -146,7 +146,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             </div>
 
             <div className="SkillItem">
-              <div className="Dot">&#x2022;</div>
+              {/* <div className="Dot">&#x2022;</div> */}
 
               <div className="Icon">
                 <PiMicrosoftExcelLogoFill />
@@ -159,7 +159,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
           {/* Bottom Row: */}
           <div className="BottomRow Row">
             <div className="SkillItem">
-              <div className="Dot">&#x2022;</div>
+              {/* <div className="Dot">&#x2022;</div> */}
 
               <div className="Icon">
                 <DiReact />
@@ -169,7 +169,7 @@ const ComputerSkills: React.FC<ComputerSkillsProps> = ({ scrollPosition }) => {
             </div>
 
             <div className="SkillItem">
-              <div className="Dot">&#x2022;</div>
+              {/* <div className="Dot">&#x2022;</div> */}
 
               <div className="Icon">
                 <DiSqllite />
