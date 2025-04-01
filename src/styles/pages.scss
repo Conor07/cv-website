@@ -72,14 +72,14 @@
 
   .EmploymentCarousel {
     width: 100%;
-    height: 200px;
+    height: 220px;
 
     .EmploymentItem {
       display: flex;
       flex-direction: column;
       gap: 20px;
       align-items: center;
-      padding-bottom: 20px !important;
+      padding-bottom: 30px !important;
       margin: 20px 50px;
 
       .Date {
